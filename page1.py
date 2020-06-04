@@ -27,5 +27,8 @@ _xticks_labels += ["11点{}分".format(i) for i in range(60)]
 plt.xticks(list(x)[::3], _xticks_labels[::3], rotation=45, fontproperties = my_font)  # rotation旋转的度数
 
 #添加描述信息
+plt.xlabel("时间", fontproperties = my_font)
+plt.ylabel("温度 单位（℃）", fontproperties = my_font)
+plt.title("10点到12点每分钟的气温变化情况", fontproperties = my_font)
 
 plt.show()
